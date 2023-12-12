@@ -1,0 +1,83 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+
+body {
+    background: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.wrapper {
+    padding: 0px 30px;
+    margin-top: 180px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+
+    .head-title{
+        display: flex;
+        gap: 15px;
+
+        img {
+            height: 30px;
+            margin-top: 10px;
+        }
+    }
+    .faq-heading {
+        font-weight: 700;
+    }
+    hr {
+        opacity: 10%;
+    }
+}
+
+
+
+.faq-accordion-title {
+    display: flex;
+    gap: 1.5rem;
+    .faq-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+}
+
+.faq-content {
+    color: hsl(292, 16%, 49%);
+    display: none;
+    padding: 20px 0;
+}
+
+
+  @media screen and (min-width: 600px) {
+    .card {
+        width: 500px;
+    }
+  }
